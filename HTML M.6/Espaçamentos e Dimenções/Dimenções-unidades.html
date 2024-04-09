@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dimenções e Unidades</title>
+  </head>
+
+  <body>
+    <style>
+      /* Tipos de medida relativa */
+
+      /*vh - viewport height */
+      /*vw - viewport width  */
+      /* em */
+      /* rem */
+      html {
+        /* em vai utilizar as medidas por herança */
+        /* rem vai usar a medida root definida no HTML */
+        /* "px" Unidade de medida imutavel ou fixa */
+        /* font-size: 10px; */
+
+        /* para melhor organização, sempre colocar a medida root em 10 para facilitar no calculo */
+        /* Unidade de medida relativa, de acordo com o pdra do navegador */
+        /* Mais recomendada */
+        font-size: 62.5%;
+      }
+      div {
+        background-color: red;
+        /* rem é igual a 1x a font-size definida no html */
+        padding: 1rem;
+        /* 100px */
+        width: 10rem;
+        /* 150px */
+        height: 15rem;
+      }
+
+      section {
+        font-size: 10px;
+      }
+      h1 {
+        /* 32px */
+        font-size: 3.2rem;
+      }
+    </style>
+    <div>
+      <h1>Meu titulo</h1>
+      <p>Meu Paragrafo</p>
+    </div>
+
+    <section>
+      <p>meu segundo Paragrafo</p>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+  </head>
+  <body>
+    <!-- Sempre utilizar essas configurações para estilizar o css -->
+    <!--<style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        } 
+        html {
+        font-size: 62.5%;
+      } 
+        </style>
+    -->
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        /* Padrão do HTML */
+        /* box-sizing: content-box;  x; */
+
+        /* Vai atribuir exatamente o tamanho que você está querendo */
+        box-sizing: border-box;
+      }
+
+      html {
+        font-size: 62.5%;
+      }
+      div {
+        border: solid 2px black;
+        padding: 1rem;
+      }
+    </style>
+
+    <div>
+      <h1>Titulo</h1>
+      <h2>Titulo 2</h2>
+      <p>paragrafo</p>
+    </div>
+  </body>
+</html>

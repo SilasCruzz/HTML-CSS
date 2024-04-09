@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipos de posicionamento</title>
+  </head>
+  <body>
+    <!-- position: static, relative, absolute, fixed, sticky -->
+    <!-- Quando não se define nada é Estarico/Static -->
+    <!-- Relativo/Relative é igual ao Estatico porem ele pode ser movido -->
+
+    <!-- Posicionamentos para mover elementos: top, left, right, bottom  -->
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      html {
+        color: white;
+        font-size: 62.5%;
+      }
+
+      div {
+        height: 100rem;
+        width: 70rem;
+        background-color: green;
+        position: relative;
+      }
+      body {
+        background-color: aqua;
+      }
+      /* inherit para herdar regra de elemento pai */
+      a {
+        color: inherit;
+        position: absolute;
+        bottom: 2rem;
+        right: 0rem;
+      }
+      /* fixed parqa ficar  fixado */
+      h1 {
+        position: fixed;
+        bottom: 0;
+        right: 2rem;
+      }
+
+      /* Stiky para seguir o scrol do mouse */
+      h2 {
+        position: static;
+        position: sticky;
+        top: 3rem;
+      }
+    </style>
+
+    <div>
+      <a href="">È um teste</a>
+      <h1>Meu titulo</h1>
+
+      <h2>Meu subtitulo</h2>
+
+      <p>Meu paragrafo</p>
+    </div>
+  </body>
+</html>

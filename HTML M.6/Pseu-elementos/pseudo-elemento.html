@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo-elemento</title>
+  </head>
+  <body>
+    <style>
+                     /* Pseudo-elemento sera utilizado pela tag "::" */
+
+                     /* Depois do texto */
+                     p::after {
+                       content: "Textinho que vai entrar no final."";
+                     }
+
+                  /* Antes do texto */
+                     p::before{
+               content: "Textinho que vai entrar no inicio";
+                     }
+
+            /* Primeira letra */
+                     ::first-letter{
+             font-size: 70px;
+             font-weight: 700;
+             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+        /* primeira linha */
+            p::first-line{
+      color:yellow;
+          }
+    </style>
+
+    <p>
+      Vivamus ligula dolor, aliquam non quam eu, posuere aliquet diam. Praesent
+      sit amet orci fermentum, volutpat velit quis, dignissim tellus. Morbi
+      scelerisque tincidunt nibh at luctus. Curabitur vestibulum sodales
+      vehicula. In vitae quam facilisis, volutpat ante quis, vestibulum mauris.
+      Mauris at nisi id erat varius scelerisque. Mauris magna arcu, pulvinar sit
+      amet orci sed, sollicitudin tempus mauris. Morbi tincidunt eros vitae
+      metus feugiat congue. Pellentesque habitant morbi tristique senectus et
+      netus et malesuada fames ac turpis egestas. Etiam faucibus lacus a laoreet
+      faucibus. Cras posuere pellentesque metus, efficitur hendrerit nulla
+      vulputate et.
+    </p>
+  </body>
+</html>

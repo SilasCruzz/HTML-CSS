@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipos de visualização</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        font-size: 62.5%;
+      }
+      span {
+        color: red;
+      }
+      b {
+        font-size: 2rem;
+        font-style: italic;
+        font-weight: 700;
+      }
+
+      /* Block Ocupa todo o espaço horizontal,
+      Quebra linhas,
+      Box model se aplica,
+      Padding e Margin funcionam normalmente.  */
+      h1 {
+        display: block;
+        font-size: 3.2rem;
+        height: 5rem;
+        margin: 1rem;
+        padding: 1rem;
+      }
+
+      /* Inline Ocupa apenas o espaço do conteudo,
+      Nâo quebra linhas(Fica lado a lado) Box model NÂO se aplica,
+      Padding e Margin só funcionam na horizontal. */
+    </style>
+
+    <!-- Inline-block
+    Ocupa apenas o espaço do conteudo
+    Não quebra linhas(fica lado a lado)
+    Box model se aplica
+    Padding e Margin funcionam normalmente -->
+
+    <!-- display none é usado para não exibir elemento. -->
+    <div>
+      <h1>Meu primeiro titulo</h1>
+      <h2>meu subtitulo</h2>
+
+      <p>
+        conclusão de seu chamado Você está recebendo orientações de conclusão de
+        <b>conclusão de seu chamado</b>persista poderá <span>rejeitá-lo</span>,
+        e para isso é importante que informe o motivo do rejeite do chamado no
+        campo disponível abaixo, antes de clicar no botão rejeitar.
+        Atenciosamente, Equipe Suporte IT2B Acesse nossos outros canais de
+        atendimento: Portal Web e Aplicação Mobile."
+      </p>
+    </div>
+  </body>
+</html>

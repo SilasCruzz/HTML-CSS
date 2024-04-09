@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seletor universal</title>
+  </head>
+  <body>
+    <div>
+      <style>
+        /* Sempre utilizar esse font size para usar o rem */
+        /* ele vai sempre somar vezes 10 */
+        /* 1rem = (1x10=10) */
+        html {
+          font-size: 62.5%;
+        }
+        h1 {
+          font-size: 3rem;
+          color: blue;
+        }
+        /* Como boa pratica deixar o margin e o padding zerados com o seletor */
+        /* "#" Seletor de id */
+        /* "." Seletor de classe */
+        /* "*" Seletor universal */
+        * {
+          color: brown;
+          /* Sempre colocar o magin e paddin em 0 com o seletor universal */
+          margin: 0;
+          padding: 0;
+        }
+      </style>
+      <div>
+        <h1>Titulo</h1>
+        <h2>Titulo 2</h2>
+        <p>paragrafo</p>
+      </div>
+    </div>
+  </body>
+</html>
